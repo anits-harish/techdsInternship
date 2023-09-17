@@ -11,9 +11,9 @@ public class postgreIN {
 
     public static void main(String[] args) {
 
-        String url = "jdbc:postgresql://database-1.ch1h6wz99vww.ap-south-1.rds.amazonaws.com:5432/test_1";
-        String user = "postgres";
-        String password = "vYRJZuo65qe01ogHcHwz";
+        String url = "jdbc:postgresql://HOST/DB";
+        String user = "USERNAME";
+        String password = "PASSWORD";
 
         try (Connection con = DriverManager.getConnection(url, user, password);
                 Statement st = con.createStatement();
